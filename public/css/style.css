@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* 投稿 */
+.post_contents {
+  padding: 16px 6.4% 0;
+}
+
+.post_contents .contetens_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.post_contents .contents_item {
+  margin-bottom: 26px;
+  width: 47%;
+}
+
+.post_contents .contents_item:hover {
+  opacity: .7;
+}
+
+.post_contents .item_title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.post_contents .date {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.post_contents .item_text {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.post_contents .item_ex {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.post_contents .post_name {
+  align-items: center;
+  display: flex;
+}
+
+.post_contents .post_image {
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 50%;
+  display: flex;
+  height: 28px;
+  justify-content: center;
+  padding: 4px;
+  width: 28px;
+}
+
+.post_contents .post_name--title {
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.post_contents .post_time {
+  color: #C4C4C4;
+  font-size: 10px;
+  margin-right: 4px;
+}
+
+/* 会員登録共通 */
+.under_register .logo_image {
+  max-width: 170px;
+  margin: 32px auto 0;
+}
+
+.under_register .title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.under_register .step_wrap {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.under_register .number_wrap {
+  text-align: center;
+  width: 70px;
+}
+
+.under_register .number_wrap1 {
+  margin-right: 13px;
+}
+
+.under_register .number_wrap2 {
+  margin-left: 13px;
+}
+
+.under_register .number {
+  align-items: center;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  font-size: 14px;
+  height: 32px;
+  justify-content: center;
+  margin: auto;
+  width: 32px;
+}
+
+.under_register .number1 {
+  background-color: #DF0066;
+  color: #fff;
+  position: relative;
+}
+
+.under_register .number1::before {
+  bottom: 0;
+  background: rgba(223, 0, 102, 0.16);
+  content: '';
+  display: inline-block;
+  height: 2px;
+  margin: auto;
+  position: absolute;
+  right: -64px;
+  top: 0;
+  width: 64px;
+}
+
+.under_register .number2 {
+  background: rgba(223, 0, 102, 0.16);
+  color: #DF0066;
+}
+
+.under_register .number_text {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+/* 登録フォーム共通 */
+.form {
+  max-width: 327px;
+  margin: auto;
+  width: 95%;
+}
+
+.form .form_text {
+  border: 1px solid  #c4c4c4;
+  border-radius: 4px;
+  display: block;
+  padding: 14px;
+  position: relative;
+  width: 100%;
+}
+
+.form .form_text::placeholder {
+  color: #c4c4c4;
+  font-size: 14px;
+}
+
+.form .form_text:not(:first-child) {
+  margin-top: 16px;
+}
+
+.form .form_email,
+.form .form_password {
+  margin-top: 16px;
+  position: relative;
+}
+
+.form .form_email::before,
+.form .form_password::before {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: top 50% left 14px;
+  bottom: 0;
+  content: '';
+  display: inline-block;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: 12%;
+  z-index: 10;
+}
+
+.form .form_email::before {
+  background-image: url(../img/common/email.png);
+}
+
+.form .form_password::before {
+  background-image: url(../img/common/key.png);
+}
+
+.form .form_mark {
+  padding: 14px 14px 14px 44px;
+}
+
+.form .submit_btn {
+  background-color: #DF0066;
+  border: 1px solid  #DF0066;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  line-height: 1;
+  max-width: 165px;
+  margin: 24px auto 0;
+  padding: 9px;
+  text-align: center;
+  width: 100%;
+}
+
+.another_wrap {
+  border-top: 1px solid #f5f5f5;
+  max-width: 327px;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.another_wrap .another_text {
+  color: #242424;
+  font-size: 12px;
+}
+
+.another_wrap .another_link {
+  border-bottom: 1px solid  #242424;
+  color: #242424;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+
+/* ボタン */
+.btn {
+  background-color: #DF0066;
+  border: 1px solid  #DF0066;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  line-height: 1;
+  max-width: 165px;
+  padding: 9px;
+  text-align: center;
+  width: 100%;
+}
+
+/* タイトルの下、中心に下線 */
+.border_title {
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.border_title::after {
+  bottom: 0;
+  background: #DF0066;
+  content: '';
+  display: inline-block;
+  height: 4px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 30px;
+}
+
+.creat_label {
+  background-color: #DF0066;
+  bottom: 0;
+  left: 0;
+  padding: 14px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.creat_label .create_text {
+  color: #fff;
+  font-size: 14px;
+}
+
+.day_input input {
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 4px 5px;
+}
+
+.vdp-datepicker__calendar {
+  left: 50%;
+  position: fixed !important;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.vdp-datepicker__calendar::before {
+  background-color: rgba(0, 0, 0, 0.75);
+  content: '';
+  display: inline-block;
+  position: fixed;
+  height: 250%;
+  left: -40%;
+  top: -60%;
+  width: 200%;
+  z-index: -1;
+}
+
+.vdp-datepicker__calendar * {
+  background-color: #fff !important;
+}
+
+.vdp-datepicker__calendar .selected {
+  background: rgba(223, 0, 102, 0.16) !important;
+  border-radius: 50%;
+}
