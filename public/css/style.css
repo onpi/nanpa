@@ -295,6 +295,21 @@
   font-size: 14px;
 }
 
+.day_input::after {
+  background-image: url(/img/common/search.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  margin: auto;
+  position: absolute;
+  right: 11px;
+  top: 0;
+  width: 8px;
+}
+
 .day_input input {
   background: #FFFFFF;
   border: 1px solid #C4C4C4;
@@ -302,6 +317,8 @@
   border-radius: 4px;
   font-size: 16px;
   padding: 4px 5px;
+  position: relative;
+  width: 100%;
 }
 
 .vdp-datepicker__calendar {

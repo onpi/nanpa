@@ -4,22 +4,7 @@
     <div class="mv_contents">
       <h2 class="mv_title">いつ、どこでナンパ合流しますか？</h2>
       <form class="mv_form" method="get">
-        <div class="box_wrap">
-          <div class="calendar">
-            <CalenderModal/>
-          </div>
-
-          <!-- <select class="select_day select" name="day" >
-            <option value="2020年12月1日">2020年12月1日</option>
-            <option value="2020年12月2日">2020年12月2日</option>
-            <option value="2020年12月3日">2020年12月3日</option>
-          </select> -->
-          <select class="select_place select" name="place">
-            <option value="大阪">大阪</option>
-            <option value="兵庫">兵庫</option>
-            <option value="京都">京都</option>
-          </select>
-        </div>
+        <SearchForm/>
         <input type="submit" name="" value="検索" class="box_submit">
       </form>
       <p class="or_text">もしくは</p>
@@ -57,10 +42,10 @@
 </template>
 
 <script>
-import CalenderModal from "./CalenderModal";
+import SearchForm from "./Search/SearchFormComponent";
 export default {
   components: {
-    CalenderModal
+    SearchForm
   },
 }
 
@@ -82,29 +67,7 @@ export default {
       font-weight: 700;
       text-align: center;
     }
-    .box_wrap {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-      text-align: center;
-    }
-    // .calendar {
-    //   background: #FFFFFF;
-    //   border: 1px solid #C4C4C4;
-    //   box-sizing: border-box;
-    //   border-radius: 4px;
-    //   font-size: 16px;
-    //   padding: 4px 5px;
-    //
-    // }
-    .select {
-      background: #FFFFFF;
-      border: 1px solid #C4C4C4;
-      box-sizing: border-box;
-      border-radius: 4px;
-      font-size: 16px;
-      padding: 4px 5px;
-    }
+
     .box_submit {
       background-color: #DF0066;
       border-radius: 4px;

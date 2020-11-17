@@ -1,5 +1,5 @@
 <template>
-  <div id="calendar" class="">
+  <div id="calendar" class="calender">
     <vuejs-datepicker class="day_input"
       v-model="defaultDate"
       name="datepicker"
@@ -35,5 +35,8 @@ export default {
 
 </script>
 <style lang="scss" scoped>
-
+.calender {
+  max-width: 140px;
+  width: 50%;
+}
 </style>

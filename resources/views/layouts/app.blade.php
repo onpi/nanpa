@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- CSRF Token -->
    <meta name="csrf-token" content="{{ csrf_token() }}">
-   <title>{{ config('app.name', 'Vue Laravel SPA') }}</title>
+   <title>Nanpa Today</title>
    <!-- Styles -->
    <link href="{{ asset('/css/reset.css') }}" rel="stylesheet">
    <!-- 共通パーツ -->
